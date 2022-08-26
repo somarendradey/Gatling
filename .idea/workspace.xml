@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcba8b8f-1fa1-4bf7-9b6c-be99aae310f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/gatling.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/recorder.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/Engine.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/CustomFeeder.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/RecordedSimulation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/TestCSV.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/jsonBody/bycat.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/jsonBody/create.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/jsonBody/id.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/IDEPathHelper.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/Recorder.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/data/data.csv" afterDir="false" />
-    </list>
+    <list default="true" id="bcba8b8f-1fa1-4bf7-9b6c-be99aae310f6" name="Changes" comment="first commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +63,14 @@
       <option name="presentableId" value="Default" />
       <updated>1661508793518</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1661509676625</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661509676625</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,5 +83,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

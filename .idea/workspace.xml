@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bcba8b8f-1fa1-4bf7-9b6c-be99aae310f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/gatling.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/recorder.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/Engine.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/CustomFeeder.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/RecordedSimulation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/TestCSV.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/jsonBody/bycat.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/jsonBody/create.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/GatllingTest/jsonBody/id.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/IDEPathHelper.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/Recorder.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/data/data.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2DtC3NH16tqVgtS3hBzbc2jPUhv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Engine" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Engine" />
+      <module name="Gatling" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Engine" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcba8b8f-1fa1-4bf7-9b6c-be99aae310f6" name="Changes" comment="" />
+      <created>1661508793518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661508793518</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -55,6 +55,5 @@ class TestCustomFeeder extends Simulation {
 		.exec(signUp())
 
 
-
 	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 }

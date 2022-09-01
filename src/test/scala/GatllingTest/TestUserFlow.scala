@@ -4,7 +4,7 @@ import io.gatling.core.Predef._
 import io.gatling.core.structure.ChainBuilder
 import io.gatling.http.Predef._
 
-class RecordedSimulation extends Simulation {
+class TestUserFlow extends Simulation {
 
 	private val httpProtocol = http
 		.baseUrl("https://demoblaze.com")

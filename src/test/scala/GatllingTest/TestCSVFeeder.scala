@@ -8,9 +8,12 @@ class TestCSVFeeder extends Simulation {
 	private val httpProtocol = http
 		.baseUrl("https://demoblaze.com")
 		.inferHtmlResources()
-// ch
+
+	// ch
 	def USERCOUNT = System.getProperty("USERS", "10").toInt
+
 	def RAMPDURATION = System.getProperty("RAMP_DURATION", "10").toInt
+
 	def TESTDURATION: Int = System.getProperty("TEST_DURATION", "60").toInt
 
 
@@ -32,6 +35,7 @@ class TestCSVFeeder extends Simulation {
 
 	private val uri1 = "https://api.demoblaze.com"
 	val csvFeeder = csv("src/test/scala/data/data.csv").circular
+
 	def getSpecifcPrduct() = {
 		repeat(4) {
 			feed(csvFeeder)
@@ -42,12 +46,12 @@ class TestCSVFeeder extends Simulation {
 						.body(StringBody("{\"id\":\"${id}\"}"))
 						.check(bodyString.saveAs("responseBody"))
 						.check(jsonPath("$.title").is("${Product}"))
-						)
+				)
 				.exec { session => println(session("responseBody").as[String]); session }
 		}
 	}
 
-  private val scn = scenario("CSV feeder")
+	private val scn = scenario("CSV feeder")
 		.forever {
 			exec(getSpecifcPrduct())
 				.pause(2)
@@ -60,7 +64,7 @@ class TestCSVFeeder extends Simulation {
 			atOnceUsers(5),
 			rampUsers(10).during(10))
 		.protocols(httpProtocol)).maxDuration(60)
-}
+
 	after {
 		println("Test completed")
 	}

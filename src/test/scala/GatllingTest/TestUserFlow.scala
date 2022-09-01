@@ -1,6 +1,6 @@
 package GatllingTest
 
-import io.gatling.core.Predef._
+import io.gatling.core.Predef.{rampUsers, _}
 import io.gatling.core.structure.ChainBuilder
 import io.gatling.http.Predef._
 
@@ -71,8 +71,7 @@ class TestUserFlow extends Simulation {
 
 	private val uri1 = "https://api.demoblaze.com"
 
-
-  private val scn = scenario("My first Gatling test")
+	private val scn = scenario("My first Gatling test")
     .exec(
       http("home page load")
         .get("/")
@@ -98,10 +97,15 @@ class TestUserFlow extends Simulation {
             .headers(headers_33)
             .body(RawFileBody("src/test/scala/GatllingTest/jsonBody/id.json"))
 				.check(bodyString.saveAs("responseBody"))
+				.check(status.in(200 to 210))
 		.check(jsonPath("$.title").is("Samsung galaxy s6")))
+
 		.exec { session => println(session("responseBody").as[String]); session }
 
 		.exec { session => println(session); session }
 
-	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
+	setUp(scn.inject(
+		nothingFor(5),
+		rampUsers(2).during(RAMPDURATION))
+		.protocols(httpProtocol))
 }

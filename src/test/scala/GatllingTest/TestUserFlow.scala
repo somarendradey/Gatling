@@ -104,8 +104,5 @@ class TestUserFlow extends Simulation {
 
 		.exec { session => println(session); session }
 
-	setUp(scn.inject(
-		nothingFor(5),
-		rampUsers(2).during(RAMPDURATION))
-		.protocols(httpProtocol))
+	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 }

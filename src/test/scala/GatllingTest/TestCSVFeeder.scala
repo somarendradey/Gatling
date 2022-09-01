@@ -11,7 +11,7 @@ class TestCSVFeeder extends Simulation {
 // ch
 	def USERCOUNT = System.getProperty("USERS", "10").toInt
 	def RAMPDURATION = System.getProperty("RAMP_DURATION", "10").toInt
-	def TESTDURATION: Int = System.getProperty("TEST_DURATION", "30").toInt
+	def TESTDURATION: Int = System.getProperty("TEST_DURATION", "60").toInt
 
 
 	private val headers_33 = Map(
@@ -48,16 +48,19 @@ class TestCSVFeeder extends Simulation {
 	}
 
   private val scn = scenario("CSV feeder")
-		.exec(getSpecifcPrduct())
+		.forever {
+			exec(getSpecifcPrduct())
+				.pause(2)
 
+		}
 
-	setUp(
-		scn.inject(
+	setUp(scn.
+		inject(
 			nothingFor(5),
-			rampUsers(USERCOUNT).during(RAMPDURATION)
-		).protocols(httpProtocol)
-	).maxDuration(TESTDURATION)
-
+			atOnceUsers(5),
+			rampUsers(10).during(10))
+		.protocols(httpProtocol)).maxDuration(60)
+}
 	after {
 		println("Test completed")
 	}

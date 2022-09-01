@@ -5,7 +5,7 @@ import io.gatling.core.structure.ChainBuilder
 import io.gatling.http.Predef._
 
 class TestUserFlow extends Simulation {
-
+//http configuration
 	private val httpProtocol = http
 		.baseUrl("https://demoblaze.com")
 		.inferHtmlResources()
@@ -68,8 +68,9 @@ class TestUserFlow extends Simulation {
 		"upgrade-insecure-requests" -> "1",
 		"user-agent" -> "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
 	)
-
 	private val uri1 = "https://api.demoblaze.com"
+
+//Scenario definition
 
 	private val scn = scenario("My first Gatling test")
     .exec(
@@ -103,6 +104,8 @@ class TestUserFlow extends Simulation {
 		.exec { session => println(session("responseBody").as[String]); session }
 
 		.exec { session => println(session); session }
+
+	//Load Scenario
 
 	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 }

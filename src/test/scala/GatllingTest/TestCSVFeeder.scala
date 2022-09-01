@@ -3,12 +3,12 @@ package GatllingTest
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class TestCSV extends Simulation {
+class TestCSVFeeder extends Simulation {
 
 	private val httpProtocol = http
 		.baseUrl("https://demoblaze.com")
 		.inferHtmlResources()
-
+// ch
 	def USERCOUNT = System.getProperty("USERS", "10").toInt
 	def RAMPDURATION = System.getProperty("RAMP_DURATION", "10").toInt
 	def TESTDURATION: Int = System.getProperty("TEST_DURATION", "30").toInt

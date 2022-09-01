@@ -5,7 +5,7 @@ import io.gatling.http.Predef._
 
 import scala.util.Random
 
-class CustomFeeder extends Simulation {
+class TestCustomFeeder extends Simulation {
 
 	private val httpProtocol = http
 		.baseUrl("https://demoblaze.com")
